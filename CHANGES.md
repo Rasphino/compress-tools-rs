@@ -3,10 +3,12 @@
 <!-- next-header -->
 
 ## [Unreleased] - ReleaseDate
+* Enable static linking via feature flag
 
 * ci: windows: Use pre-installed vcpkg and fix build [#81]
 * Raise MSRV to 1.49.0
 * Upgrade tokio-util to 0.7.0
+* Enable static linking via feature flag
 
 [#81]: https://github.com/OSSystems/compress-tools-rs/issues/81
 
