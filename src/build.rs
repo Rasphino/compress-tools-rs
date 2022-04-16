@@ -58,7 +58,12 @@ fn link_deps(mode: &str) {
 
     #[cfg(target_os = "macos")]
     {
+        #[cfg(target_arch = "x86_64")]
         println!("cargo:rustc-link-search=native=/usr/local/opt/bzip2/lib");
+
+        #[cfg(target_arch = "aarch64")]
+        println!("cargo:rustc-link-search=native=/opt/homebrew/opt/bzip2/lib");
+
         link_expat(mode);
     }
 
